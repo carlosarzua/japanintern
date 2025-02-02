@@ -1,0 +1,360 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #f5d1b0; /* Light peach background */
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    padding: 20px 20px;
+}
+
+/* Base styling for navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333;  /* Set text color */
+    text-decoration: none;  /* Remove default underline */
+    position: relative;  /* For positioning the underline */
+}
+
+/* Add underline effect on hover */
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #333;  /* Underline color */
+    transform: scaleX(0);  /* Start with no underline */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+/* Apply underline when hovering */
+nav ul li a:hover:after {
+    transform: scaleX(1);  /* Show underline */
+    transform-origin: bottom left;  /* Animate from left */
+}
+
+
+/* Home Section */
+.home {
+    text-align: center;
+    padding: 50x 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.home h1 {
+    font-size: 4rem;
+    color: #333;
+}
+
+.home p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Main Sections */
+.main-sections {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.section-box {
+    background-color: white;
+    border: 2px solid #333;
+    padding: 20px;
+    width: 22%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.section-box a {
+    color: #333;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 2px solid #333;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.section-box a:hover {
+    background-color: #333;
+    color: #f5d1b0;
+}
+
+/* Internship Boxes */
+.internship-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.internship {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.internship h3 {
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.internship p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.internship a {
+    text-decoration: none;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .internship {
+        width: 100%; /* Make each internship box take up the full width */
+        margin-bottom: 20px; /* Add some space between the stacked boxes */
+    }
+
+    .internship-boxes {
+        justify-content: center; /* Center the internship boxes */
+    }
+}
+
+/* Testimonials */
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow the videos to wrap on smaller screens */
+}
+
+.video-item {
+    text-align: center; /* Center the title above the video */
+    width: 46%; /* Each video takes up 48% of the container */
+    margin: 0px 20px;
+}
+
+.video-item h3 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px; /* Adds space between the title and video */
+}
+
+.video-item iframe {
+    width: 100%; /* Make the iframe responsive */
+    height: 300px;
+}
+
+/* Center the videos when they stack on smaller screens */
+@media (max-width: 768px) {
+    .video-container {
+        justify-content: center; /* Center the videos when wrapped */
+    }
+
+    .video-item {
+        width: 80%; /* Adjust width for smaller screens */
+        margin: 10px 0; /* Remove horizontal margin and add vertical margin */
+    }
+}
+
+/* Ensure text in internship boxes stacks on mobile */
+@media (max-width: 768px) {
+    .internship-boxes {
+        display: block; /* Stack the internship boxes vertically */
+    }
+    
+    .internship {
+        width: 100%; /* Make each internship box take up the full width */
+        margin-bottom: 20px; /* Add space between the boxes */
+    }
+}
+
+/* Make the main h1 smaller on mobile */
+@media (max-width: 768px) {
+    .home h1 {
+        margin-top: -15px;
+        font-size: 2rem; /* Make the heading smaller */
+    }
+
+    .home p {
+        font-size: 1rem; /* Adjust the paragraph size as well */
+    }
+}
+
+/* Center nav items and stack them on mobile */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center; /* Center the navigation */
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block; /* Stack the list items vertically */
+        margin: 0px 0; /* Add vertical margin between items */
+    }
+
+    nav ul li a {
+        font-size: 0.8rem; /* Adjust font size if needed */
+    }
+}
+
+
+/* Contact Section */
+#contact {
+    padding: 30px;
+    background-color: #f5d1b0;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#contact h3 {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+/* Question Box Styling */
+.question-box {
+    margin-top: 20px;
+}
+
+.question-btn {
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.question-btn:hover {
+    background-color: #fef1e5;
+    color: #333;
+}
+
+/* Answer Box Styling */
+.answer-box {
+    display: none; /* Hidden by default */
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.answer-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Transition for smooth display */
+.question-box button:focus + .answer-box {
+    display: block;
+}
+
+
+.zcal-inline-widget {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.zcal-inline-widget a {
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.zcal-inline-widget a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+#company h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#company h3 {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    font-style: italic;
+}
+
+/* Hide the original text on mobile */
+@media (max-width: 768px) {
+    .home .original-text {
+        display: none; /* Hide the original text on mobile */
+    }
+    
+    .home .mobile-text {
+        display: block; /* Show the mobile-specific content */
+        text-align: center; /* Center the text */
+    }
+
+    .home .mobile-text p {
+        font-size: 1em; /* Adjust font size for better visibility */
+        margin: 5px 0; /* Add space between the lines */
+    }
+}
+
+/* Show the original text on desktop */
+@media (min-width: 769px) {
+    .home .original-text {
+        display: block; /* Show the original paragraph on desktop */
+    }
+
+    .home .mobile-text {
+        display: none; /* Hide the mobile content on desktop */
+    }
+}
+
