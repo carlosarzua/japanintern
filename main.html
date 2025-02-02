@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JapanIntern.Net</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">HOME/🇺🇸🇪🇸</a></li>
+            <li><a href="#internships">INTERNSHIPS/prácticas</a></li>
+            <li><a href="#testimonials">TESTIMONIALS/becarios</a></li>
+            <li><a href="#contact">QUESTIONS/preguntas</a></li>
+            <li><a href="#company">FIND YOUR INTERN/<strong>インターン生をお探しの企業様</strong></a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <h1>JapanIntern.Net</h1>
+        <p class="original-text">Find Your Dream Internship in Japan // <strong>日本ならではのインターンシップ</strong> // <i>Prácticas en el país más increíble del mundo</i></p>
+        <div class="mobile-text">
+            <p>🇯🇵 日本ならではのインターンシップ</p>
+            <p>🇺🇸 Find your Dream Internship in Japan</p>
+            <p>🇪🇸 Prácticas en el país más increíble del mundo</p>
+        </div>
+    </section>
+
+    <!-- Internships Anchor -->
+    <section id="internships">
+        <div class="internship-boxes">
+            <!-- Example Internship Box -->
+            <div class="internship"> 
+                <a href="#contact"><h3><b>📈 Marketing Internship</b></h3>
+                <p>📹 Filming Company</p>
+                <p>📍 Tokyo</p>
+                <p>📅 2-6 months</p></a>
+            </div>
+            <div class="internship">
+                <a href="#contact"><h3><b>🎞️ Production Assistant</b></h3>
+                <p>📹 Filming Company</p>
+                <p>📍 Tokyo</p>
+                <p>📅 2-6 months</p></a>
+            </div>
+            <div class="internship">
+                <a href="#contact"><h3><b>📱 Social Media Management</b></h3>
+                <p>💻 AI Startup</p>
+                <p>📍 Tokyo</p>
+                <p>📅 Negotiable</p></a>
+            </div>
+            <div class="internship">
+                <a href="#contact"><h3><b>📈 Marketing Internship</b></h3>
+                <p>💻 AI Startup</p>
+                <p>📍 Tokyo</p>
+                <p>📅 Negotiable</p></a>
+            </div>
+            <div class="internship">
+                <a href="#contact"><h3><b>👦 Teaching</b></h3>
+                <p>🏫 Home for Children</p>
+                <p>📍 Mie</p>
+                <p>📅 Negotiable</p></a>
+            </div>
+            <div class="internship">
+                <a href="#contact"><h3><b>🙋 Looking for something else?</b></h3>
+                <p>✉️ Contact us and I'll hit up my network!</p></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Anchor -->
+    <section id="testimonials">
+        <div class="video-container">
+            <div class="video-item">
+                <h3>🇺🇸 Meet Atsushi.</h3>
+                <iframe width="576" height="283.5" src="https://www.youtube.com/embed/63kkM3ZoiOE" title="Atsushi Does an Internship in Tokyo thanks to JapanIntern.Net" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <h3><i>🇪🇸 Esta es Judith.</i></h3>
+                <iframe width="576" height="283.5" src="https://www.youtube.com/embed/EhdRMUGefOY" title="Judith hace prácticas en Tokio gracias a JapanIntern.Net" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Anchor -->
+    <section id="contact">
+        <h2>Ready to go to Japan?</h2>
+        <h3><i>¿Listo/a para Japón?</i></h3>
+<!-- Questions with expandable boxes -->
+    <div class="question-box">
+        <button class="question-btn" onclick="toggleAnswer('question1')">Is this service free? <i>¿Pero cuesta?</i></button>
+        <div id="question1" class="answer-box">
+            <p>The program is free for students of our academy, <a href="http://CarlosCoordinator.com" target="_blank">CarlosCoordinator.com</a>. We specialize in online Japanese classes, ranging from ultra beginner to JLPT preparation, including the N1. We also have experience with haafu and Japanese people raised abroad, with a program specifically designed for them in mind.</p>
+            <i style="margin-top: 10px;">El programa de prácticas es totalmente gratis para nuestros alumnos de japonés e inglés de CarlosCoordinator.com, que van desde el nivel básico hasta el NOKEN N1. Tenemos un programa específico para haafu o japoneses criados fuera de Japón.</i>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <button class="question-btn" onclick="toggleAnswer('question2')">Do I need to speak Japanese? <i>¿Es que tengo que hablar japonés?</i></button>
+        <div id="question2" class="answer-box">
+                Most positions do NOT require Japanese fluency, but it is highly recommended. We can help you find Japanese classes.</p>
+                <i style="margin-top: 10px;">No es necesario tener un nivel de japonés para muchas de las prácticas, pero es muy recomendable. Te podemos asesorar con clases de japonés y/o inglés.</i>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <button class="question-btn" onclick="toggleAnswer('question3')">But, like, where would I live? <i>Pero, ¿cómo encontraría casa?</i></button>
+        <div id="question3" class="answer-box">
+            <p>We can certainly help you find housing, so don’t worry about it! Let us know in the call if you think you need help.</p>
+            <i style="margin-top: 10px;">No te preocupes; te puedo ayudar sin problemas a encontrar un piso o una habitación en Tokio. ¡Coméntamelo en la llamada!</i>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <button class="question-btn" onclick="toggleAnswer('question4')">How about visas? <i>¿Y el visado?</i></button>
+        <div id="question4" class="answer-box">
+            <p>You can do an internship in Japan with a Working Holiday Visa, which is one of the easiest types of visas you can get.</p>
+            <i style="margin-top: 10px;">Puedes hacer prácticas en Japón con la Working Holiday Visa, que es una de las más sencillas de obtener.</i>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <button class="question-btn" onclick="toggleAnswer('question5')">Okay, what do I do then? <i>Convencido/a. ¿Qué hago entonces?</i></button>
+        <div id="question5" class="answer-box">
+            <p>Just book a free call with me in the calendar below at your preferred time.</p>
+            <i style="margin-top: 10px;">Solo tienes que agendar una llamada conmigo en el calendario de abajo, a la hora que mejor te venga.</i>
+        </div>
+    </div>
+    
+    <p style="margin-top: 20px;"><strong>Book your preferred time slot in the section below:</strong></p>
+    <p style="margin-top: 5px; margin-bottom: -30px;"><i>Reserva aquí tu asesoramiento gratis a la hora que mejor te convenga:</i></p>
+    
+        <!-- Embed the zcal.co calendar directly here -->
+        <script type="text/javascript" async src="https://static.zcal.co/embed/v1/embed.js"></script>
+        <div class="zcal-inline-widget"><a href="https://zcal.co/i/yzDmxnXz">Find your Internship in Japan</a></div>
+    
+    </section>
+    
+    
+
+    <!-- Companies Anchor -->
+    <section id="company">
+        <h2 style="margin-left: 20px;">Are you a company or freelancer in Japan looking for interns?</h2>
+        <h3 style="margin-left: 15px;">「企業様向け・フリーランサー様向け」インターン生をお探しですか？</h3>
+        <!-- Embed zcal.co calendar here -->
+        <script type="text/javascript" async src="https://static.zcal.co/embed/v1/embed.js"></script>
+        <div class="zcal-inline-widget"><a href="https://zcal.co/i/9P3Dchs3">Find your Intern - Schedule a meeting</a></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 JapanIntern.Net. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
